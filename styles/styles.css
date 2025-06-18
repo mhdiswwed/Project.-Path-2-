@@ -1,0 +1,279 @@
+/* עיצוב בסיסי */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0e6f0;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+}
+
+/* עיצוב אזור השליטה */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* רשימת אנשי קשר */
+ul#contactsList {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.contact:hover {
+  background-color: #f0f0f0;
+}
+
+/* תמונת איש קשר */
+.contact img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* חלון קופץ */
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+}
+
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#popup.show {
+  display: flex;
+}
+
+#closePopup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/*מסדר גודל האיקוניים*/
+.contact div {
+  display: flex;
+  gap: 6px;
+  /* רווח בין הכפתורים */
+}
+.contact button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contact button img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+main {
+  padding: 2em;
+  animation: fadeIn 1s ease-in;
+  flex-grow: 1;
+}
+
+
+
+
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: #48525a;
+  color: white;
+  padding: 1em 2em;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f1f5f8;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #b7d1e4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-container {
+  max-width: 600px;
+  margin: auto;
+}
+.contacts-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  /* מרכז את הרשימה */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* ממרכז כרטיסים */
+  gap: 12px;
+  max-width: 600px;
+  /* גבול רוחב כללי */
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.contact-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-info {
+  flex-grow: 1;
+}
+
+.contact-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.about-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.team-photos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
