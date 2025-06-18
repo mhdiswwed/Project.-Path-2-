@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone Book</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="icon" href="./images/icons8-phone-book-48.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div class="container header-container">
+      <img src="images/icons8-phone-book-48.png" alt="Logo" title="Logo" width="80" height="80">
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Phone Book</h1>
+      <!-- אזור שליטה: מונה אנשים, חיפוש, הוספה, ניקוי -->
+      <div class="controls">
+        <span id="peopleCount">0 people</span>
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <button id="addBtn"><img src="images/icons8-add.gif" alt="add" title="add" width="18" height="18"></button>
+        <button id="clearAllBtn"><img src="images/icons8-delete-100.png" alt="delete" title="delete" width="18"
+            height="18"></button>
+      </div>
+    </section>
+    
+    <!-- רשימת אנשי קשר מעוצבת -->
+    <section>
+      <ul class="contacts-grid" id="contactsList"></ul>
+    </section>
+
+      <!-- חלון קופץ להצגה או עריכה -->
+      <div id="popup" class="hidden">
+        <div class="popup-content">
+          <span id="closePopup"><img src="images/icons8-exit-30.png" alt="exit" title="exit" width="18" height="18"></span>
+          <h2 id="popupTitle"></h2>
+          <div id="popupDetails"></div>
+        </div>
+      </div>
+
+    <!-- חיבור לקובץ JavaScript -->
+    <script src="js.js"></script>
+  </main>
+
+  <footer>
+    <div class="container">
+      © All rights reserved to Mhdi Swwed 2025
+    </div>
+  </footer>
+</body>
+
+</html>
